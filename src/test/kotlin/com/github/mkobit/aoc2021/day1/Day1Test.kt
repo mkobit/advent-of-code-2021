@@ -6,9 +6,9 @@ import strikt.api.expectThat
 import strikt.assertions.isEqualTo
 
 internal class Day1Test {
-    @Test
-    internal fun `sample question input`() {
-        val input = """
+
+    companion object {
+        private val SAMPLE_INPUT = """
             199
             200
             208
@@ -20,16 +20,32 @@ internal class Day1Test {
             260
             263
         """.trimIndent()
+    }
 
-        expectThat(countIncreasing(input))
+    @Test
+    internal fun `sample question input`() {
+        expectThat(countIncreasing(SAMPLE_INPUT))
             .isEqualTo(7)
     }
 
     @Test
     internal fun `puzzle input`() {
         val input = resourceText("test-data/day/1/input").trimIndent()
-
         expectThat(countIncreasing(input))
             .isEqualTo(1711)
+    }
+
+    @Test
+    internal fun `sample question input windowed`() {
+        expectThat(countIncreasingWindows(SAMPLE_INPUT))
+            .isEqualTo(5)
+    }
+
+    @Test
+    internal fun `puzzle input for window follow up`() {
+        val input = resourceText("test-data/day/1/input").trimIndent()
+
+        expectThat(countIncreasingWindows(input))
+            .isEqualTo(1743)
     }
 }
