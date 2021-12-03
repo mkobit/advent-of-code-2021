@@ -6,13 +6,29 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of("11"))
+    }
+}
+
 tasks {
-    sourceSets {
-        main {
-            java.srcDirs("src")
+    withType<Test>().configureEach {
+        useJUnitPlatform {
+            includeEngines("junit-jupiter")
         }
     }
+}
 
+dependencies {
+    implementation(libs.guava)
+    testImplementation(testLibs.bundles.junit.implementation)
+    testImplementation(testLibs.strikt.core)
+    testRuntimeOnly(testLibs.bundles.junit.runtime)
+}
+
+
+tasks {
     wrapper {
         gradleVersion = "7.3"
     }
