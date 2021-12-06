@@ -16,16 +16,16 @@ internal class Day6Test {
     }
 
     @Test
-    internal fun `sample input lanternfish`() {
-        expectThat(lanternfish(SAMPLE_INPUT))
+    internal fun `sample input lanternfish 80 days`() {
+        expectThat(lanternfish(SAMPLE_INPUT, 80.toUInt()))
             .isEqualTo(5934.toUInt())
     }
 
     @Test
-    internal fun `problem input lanternfish`() {
+    internal fun `problem input lanternfish 80 days`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
-        expectThat(lanternfish(input))
+        expectThat(lanternfish(input, 80.toUInt()))
             .isEqualTo(379114.toUInt())
     }
 //
