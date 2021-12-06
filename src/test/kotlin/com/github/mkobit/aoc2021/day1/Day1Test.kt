@@ -20,6 +20,7 @@ internal class Day1Test {
             260
             263
         """.trimIndent()
+        private const val PROBLEM_INPUT_PATH = "test-data/day/1/input"
     }
 
     @Test

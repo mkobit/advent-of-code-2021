@@ -20,6 +20,7 @@ internal class Day5Test {
             0,0 -> 8,8
             5,5 -> 8,2
         """.trimIndent()
+        private const val PROBLEM_INPUT_PATH = "test-data/day/5/input"
     }
 
     @Test
@@ -30,7 +31,7 @@ internal class Day5Test {
 
     @Test
     internal fun `problem input geothermal vent`() {
-        val input = resourceText("test-data/day/5/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(hydrothermalVent(input))
             .isEqualTo(8350.toUInt())
@@ -44,7 +45,7 @@ internal class Day5Test {
 
     @Test
     internal fun `problem input giant squid wins`() {
-        val input = resourceText("test-data/day/5/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(hydrothermalVentDiagonal(input))
             .isEqualTo(19374.toUInt())

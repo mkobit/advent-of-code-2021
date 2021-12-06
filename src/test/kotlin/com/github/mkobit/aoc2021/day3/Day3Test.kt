@@ -22,6 +22,7 @@ internal class Day3Test {
             00010
             01010
         """.trimIndent()
+        private const val PROBLEM_INPUT_PATH = "test-data/day/3/input"
     }
 
     @Test
@@ -32,7 +33,7 @@ internal class Day3Test {
 
     @Test
     internal fun `problem input diagnostic`() {
-        val input = resourceText("test-data/day/3/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(binaryDiagnostic(input))
             .isEqualTo(2520.toUInt() to 1575.toUInt())
@@ -46,7 +47,7 @@ internal class Day3Test {
 
     @Test
     internal fun `problem input life support`() {
-        val input = resourceText("test-data/day/3/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(binaryDiagnosticLifeSupport(input))
             .isEqualTo(2509.toUInt() to 1701.toUInt())

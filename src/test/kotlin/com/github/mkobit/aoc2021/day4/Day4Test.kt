@@ -30,6 +30,7 @@ internal class Day4Test {
             22 11 13  6  5
              2  0 12  3  7
         """.trimIndent()
+        private const val PROBLEM_INPUT_PATH = "test-data/day/4/input"
     }
 
     @Test
@@ -40,7 +41,7 @@ internal class Day4Test {
 
     @Test
     internal fun `problem input giant squid`() {
-        val input = resourceText("test-data/day/4/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(giantSquid(input))
             .isEqualTo(54275.toUInt())
@@ -54,7 +55,7 @@ internal class Day4Test {
 
     @Test
     internal fun `problem input giant squid wins`() {
-        val input = resourceText("test-data/day/4/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(giantSquidLetSquidWin(input))
             .isEqualTo(13158.toUInt())

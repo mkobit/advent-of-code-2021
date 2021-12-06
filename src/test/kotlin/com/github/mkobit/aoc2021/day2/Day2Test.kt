@@ -15,6 +15,7 @@ internal class Day2Test {
             down 8
             forward 2
         """.trimIndent()
+        private const val PROBLEM_INPUT_PATH = "test-data/day/2/input"
     }
 
     @Test
