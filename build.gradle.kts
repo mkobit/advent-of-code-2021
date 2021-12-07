@@ -21,7 +21,7 @@ tasks {
 }
 
 dependencies {
-    implementation(libs.guava)
+    testImplementation(libs.guava)
     testImplementation(testLibs.bundles.junit.implementation)
     testImplementation(testLibs.strikt.core)
     testRuntimeOnly(testLibs.bundles.junit.runtime)
