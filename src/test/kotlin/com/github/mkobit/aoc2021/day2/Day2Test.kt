@@ -26,7 +26,7 @@ internal class Day2Test {
 
     @Test
     internal fun `problem input coordinates`() {
-        val input = resourceText("test-data/day/2/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(submarineCoordinates(input))
             .isEqualTo(2073 to 850)
@@ -40,7 +40,7 @@ internal class Day2Test {
 
     @Test
     internal fun `problem input aim`() {
-        val input = resourceText("test-data/day/2/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
         expectThat(submarineCoordinatesAim(input))
             .isEqualTo(2073 to 895269)
     }

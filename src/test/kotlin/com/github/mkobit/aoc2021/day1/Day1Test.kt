@@ -31,7 +31,7 @@ internal class Day1Test {
 
     @Test
     internal fun `puzzle input`() {
-        val input = resourceText("test-data/day/1/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
         expectThat(countIncreasing(input))
             .isEqualTo(1711)
     }
@@ -44,7 +44,7 @@ internal class Day1Test {
 
     @Test
     internal fun `puzzle input for window follow up`() {
-        val input = resourceText("test-data/day/1/input").trimIndent()
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(countIncreasingWindows(input))
             .isEqualTo(1743)
