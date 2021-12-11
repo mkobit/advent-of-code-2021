@@ -20,17 +20,16 @@ internal class Day9Test {
     }
 
     @Test
-    internal fun `sample input crab fuel`() {
+    internal fun `sample input low level risk sum`() {
         expectThat(lowLevelRiskSum(SAMPLE_INPUT))
             .isEqualTo(15.toUInt())
     }
 
     @Test
-    @Disabled
-    internal fun `problem input crab fuel`() {
+    internal fun `problem input low level risk sum`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(lowLevelRiskSum(input))
-            .isEqualTo(1.toUInt())
+            .isEqualTo(554.toUInt())
     }
 }

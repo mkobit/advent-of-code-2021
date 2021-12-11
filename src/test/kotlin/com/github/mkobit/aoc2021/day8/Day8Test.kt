@@ -25,17 +25,16 @@ internal class Day8Test {
     }
 
     @Test
-    internal fun `sample input crab fuel`() {
+    internal fun `sample input count 7 segment digits`() {
         expectThat(count7SegmentDigits(SAMPLE_INPUT))
             .isEqualTo(26.toUInt())
     }
 
     @Test
-    @Disabled
-    internal fun `problem input crab fuel`() {
+    internal fun `problem input count 7 segment digits`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(count7SegmentDigits(input))
-            .isEqualTo(1.toUInt())
+            .isEqualTo(264.toUInt())
     }
 }
