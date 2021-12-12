@@ -37,4 +37,18 @@ internal class Day8Test {
         expectThat(count7SegmentDigits(input))
             .isEqualTo(264.toUInt())
     }
+
+    @Test
+    internal fun `sample input add segment digits`() {
+        expectThat(add7SegmentDigits(SAMPLE_INPUT))
+            .isEqualTo(61229.toUInt())
+    }
+
+    @Test
+    internal fun `problem input add segment digits`() {
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
+
+        expectThat(add7SegmentDigits(input))
+            .isEqualTo(1063760.toUInt())
+    }
 }
