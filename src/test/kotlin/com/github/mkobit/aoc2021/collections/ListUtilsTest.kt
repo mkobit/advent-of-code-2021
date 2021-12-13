@@ -1,4 +1,4 @@
-package com.github.mkobit.aoc2021.utils
+package com.github.mkobit.aoc2021.collections
 
 import org.junit.jupiter.api.Test
 import strikt.api.expectThat

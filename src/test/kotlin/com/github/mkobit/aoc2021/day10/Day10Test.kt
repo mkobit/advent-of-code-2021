@@ -48,6 +48,6 @@ internal class Day10Test {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(incompleteSyntaxScores(input))
-            .isEqualTo(0.toULong())
+            .isEqualTo(2870201088.toULong())
     }
 }

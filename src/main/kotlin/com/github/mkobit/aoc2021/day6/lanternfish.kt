@@ -1,6 +1,6 @@
 package com.github.mkobit.aoc2021.day6
 
-import com.github.mkobit.aoc2021.utils.update
+import com.github.mkobit.aoc2021.collections.update
 
 private val NEW_LANTERNFISH = 8.toUInt()
 private val RESET_LANTERNFISH = 6.toUInt()
