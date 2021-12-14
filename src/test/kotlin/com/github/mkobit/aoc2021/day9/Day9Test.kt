@@ -32,4 +32,20 @@ internal class Day9Test {
         expectThat(lowLevelRiskSum(input))
             .isEqualTo(554.toUInt())
     }
+
+    @Test
+    @Disabled
+    internal fun `sample input basin sizes`() {
+        expectThat(basinSizes(SAMPLE_INPUT))
+            .isEqualTo(1134.toUInt())
+    }
+
+    @Test
+    @Disabled
+    internal fun `problem input basin sizes`() {
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
+
+        expectThat(basinSizes(input))
+            .isEqualTo(0.toUInt())
+    }
 }

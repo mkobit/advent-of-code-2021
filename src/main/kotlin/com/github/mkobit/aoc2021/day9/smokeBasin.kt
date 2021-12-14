@@ -19,3 +19,7 @@ fun lowLevelRiskSum(input: String): UInt { ;
       heightmap[coordinate] + 1
     }.sum().toUInt()
 }
+
+fun basinSizes(input: String): UInt {
+  TODO()
+}
