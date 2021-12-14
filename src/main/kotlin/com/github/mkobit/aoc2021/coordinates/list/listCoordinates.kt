@@ -15,7 +15,10 @@ operator fun <T> List<List<T>>.contains(coordinate: ListCoordinate): Boolean =
   coordinate.row in indices && coordinate.column in first().indices
 
 operator fun <T> List<List<T>>.get(coordinate: ListCoordinate): T =
-  get(coordinate.first)[coordinate.column]
+  get(coordinate.row)[coordinate.column]
+
+fun <T> List<List<T>>.getOrNull(coordinate: ListCoordinate): T? =
+  getOrNull(coordinate.row)?.getOrNull(coordinate.column)
 
 fun ListCoordinate.adjacent(): Sequence<ListCoordinate> =
   ((row - 1)..(row + 1))

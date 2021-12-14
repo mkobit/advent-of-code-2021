@@ -6,6 +6,7 @@ import strikt.api.expectThrows
 import strikt.assertions.containsExactly
 import strikt.assertions.isEqualTo
 import strikt.assertions.isFalse
+import strikt.assertions.isNull
 import strikt.assertions.isTrue
 import kotlin.math.exp
 
@@ -36,6 +37,16 @@ internal class ListCoordinatesTest {
       get { this[2 to 0] }.isEqualTo("20")
     }
     expectThrows<IndexOutOfBoundsException> { list[2 to 4] }
+  }
+
+  @Test
+  internal fun `get or null coordinate`() {
+    expectThat(list) {
+      get { getOrNull(0 to 2) }.isEqualTo("02")
+      get { getOrNull(1 to 1) }.isEqualTo("11")
+      get { getOrNull(2 to 0) }.isEqualTo("20")
+      get { getOrNull(2 to 4) }.isNull()
+    }
   }
 
   @Test
