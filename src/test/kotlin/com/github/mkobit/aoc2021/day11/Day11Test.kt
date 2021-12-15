@@ -25,32 +25,32 @@ internal class Day11Test {
     }
 
     @Test
-    @Disabled
     internal fun `sample input octopus flashes`() {
         expectThat(octopusFlashes(SAMPLE_INPUT))
             .isEqualTo(1656.toUInt())
     }
 
     @Test
-    @Disabled
     internal fun `problem input octopus flashes`() {
+        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
+
+        expectThat(octopusFlashes(input))
+            .isEqualTo(1793.toUInt())
+    }
+
+    @Test
+    @Disabled
+    internal fun `sample input part 2`() {
+        expectThat(octopusFlashes(SAMPLE_INPUT))
+            .isEqualTo(288957.toUInt())
+    }
+
+    @Test
+    @Disabled
+    internal fun `problem input part 2`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(octopusFlashes(input))
             .isEqualTo(0.toUInt())
     }
-//
-//    @Test
-//    internal fun `sample input incomplete syntax score`() {
-//        expectThat(incompleteSyntaxScores(SAMPLE_INPUT))
-//            .isEqualTo(288957.toULong())
-//    }
-//
-//    @Test
-//    internal fun `problem input incomplete syntax score`() {
-//        val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
-//
-//        expectThat(incompleteSyntaxScores(input))
-//            .isEqualTo(0.toULong())
-//    }
 }

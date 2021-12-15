@@ -17,6 +17,10 @@ operator fun <T> List<List<T>>.contains(coordinate: ListCoordinate): Boolean =
 operator fun <T> List<List<T>>.get(coordinate: ListCoordinate): T =
   get(coordinate.row)[coordinate.column]
 
+operator fun <T> List<MutableList<T>>.set(coordinate: ListCoordinate, value: T) {
+  get(coordinate.row)[coordinate.column] = value
+}
+
 fun <T> List<List<T>>.getOrNull(coordinate: ListCoordinate): T? =
   getOrNull(coordinate.row)?.getOrNull(coordinate.column)
 
