@@ -39,18 +39,16 @@ internal class Day11Test {
     }
 
     @Test
-    @Disabled
-    internal fun `sample input part 2`() {
-        expectThat(octopusFlashes(SAMPLE_INPUT))
-            .isEqualTo(288957.toUInt())
+    internal fun `sample input octopus synchronized flash`() {
+        expectThat(octopusSynchronizedFlash(SAMPLE_INPUT))
+            .isEqualTo(195.toUInt())
     }
 
     @Test
-    @Disabled
-    internal fun `problem input part 2`() {
+    internal fun `problem input synchronized flash`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
-        expectThat(octopusFlashes(input))
-            .isEqualTo(0.toUInt())
+        expectThat(octopusSynchronizedFlash(input))
+            .isEqualTo(247.toUInt())
     }
 }
