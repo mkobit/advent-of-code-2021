@@ -4,8 +4,11 @@ enableFeaturePreview("VERSION_CATALOGS")
 
 dependencyResolutionManagement {
     versionCatalogs {
+
         create("libs") {
             alias("guava").to("com.google.guava:guava:31.0.1-jre")
+
+            version("kotlin", "1.6.10")
         }
 
         create("testLibs") {

@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version libs.versions.kotlin
 }
 
 repositories {
@@ -30,6 +30,6 @@ dependencies {
 
 tasks {
     wrapper {
-        gradleVersion = "7.3"
+        gradleVersion = "7.3.2"
     }
 }
