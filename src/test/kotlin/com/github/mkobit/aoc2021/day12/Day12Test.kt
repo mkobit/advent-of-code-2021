@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test
 import strikt.api.expectThat
 import strikt.assertions.isEqualTo
 
-@Disabled("incomplete")
 internal class Day12Test {
 
     companion object {
@@ -21,6 +20,7 @@ internal class Day12Test {
             b-end
         """.trimIndent()
         private val SAMPLE_INPUT_2 = """
+            dc-end
             HN-start
             start-kj
             dc-start
@@ -51,7 +51,7 @@ internal class Day12Test {
             pj-fs
             start-RW
         """.trimIndent()
-        private const val PROBLEM_INPUT_PATH = "test-data/day/11/input"
+        private const val PROBLEM_INPUT_PATH = "test-data/day/12/input"
     }
 
     @Nested
@@ -81,7 +81,7 @@ internal class Day12Test {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(passagePathing(input))
-            .isEqualTo(1793.toUInt())
+            .isEqualTo(3679.toUInt())
     }
 
     @Test
