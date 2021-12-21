@@ -20,19 +20,17 @@ internal class Day21Test {
     private fun deleteMe(input: String): UInt = TODO()
 
     @Test
-    @Disabled
     internal fun `sample input play dirac dice`() {
         expectThat(playDiracDice(SAMPLE_INPUT))
             .isEqualTo(739_785.toUInt())
     }
 
     @Test
-    @Disabled
     internal fun `problem input play dirac dice`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
-        expectThat(deleteMe(input))
-            .isEqualTo(0.toUInt())
+        expectThat(playDiracDice(input))
+            .isEqualTo(556_206.toUInt())
     }
 
     @Test
