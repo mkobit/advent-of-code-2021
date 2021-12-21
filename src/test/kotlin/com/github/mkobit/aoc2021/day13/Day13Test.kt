@@ -2,7 +2,6 @@ package com.github.mkobit.aoc2021.day13
 
 import com.github.mkobit.aoc2021.resourceText
 import org.junit.jupiter.api.Disabled
-import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import strikt.api.expectThat
 import strikt.assertions.isEqualTo
@@ -47,7 +46,7 @@ internal class Day13Test {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
         expectThat(foldPaper(input))
-            .isEqualTo(3679.toUInt())
+            .isEqualTo(837.toUInt())
     }
 
     @Test

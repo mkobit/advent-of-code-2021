@@ -8,7 +8,6 @@ import strikt.assertions.isEqualTo
 import strikt.assertions.isFalse
 import strikt.assertions.isNull
 import strikt.assertions.isTrue
-import kotlin.math.exp
 
 internal class ListCoordinatesTest {
 

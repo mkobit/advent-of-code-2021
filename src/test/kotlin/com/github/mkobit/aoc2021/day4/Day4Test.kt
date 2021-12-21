@@ -1,7 +1,6 @@
 package com.github.mkobit.aoc2021.day4
 
 import com.github.mkobit.aoc2021.resourceText
-import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import strikt.api.expectThat
 import strikt.assertions.isEqualTo
