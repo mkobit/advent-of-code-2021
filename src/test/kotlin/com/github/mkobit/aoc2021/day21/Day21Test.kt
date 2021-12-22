@@ -34,18 +34,18 @@ internal class Day21Test {
     }
 
     @Test
-    @Disabled
-    internal fun `sample input p2`() {
-        expectThat(optimalPolymer(SAMPLE_INPUT))
-            .isEqualTo(0.toUInt())
+    @Disabled("still needs work on algorithm for calculation")
+    internal fun `sample input quantum dirac`() {
+        expectThat(playDiracDiceQuantumDice(SAMPLE_INPUT))
+            .isEqualTo(444_356_092_776_315L.toULong())
     }
 
     @Test
     @Disabled
-    internal fun `problem input p2`() {
+    internal fun `problem input quantum dirac`() {
         val input = resourceText(PROBLEM_INPUT_PATH).trimIndent()
 
-        expectThat(deleteMe(input))
-            .isEqualTo(0.toUInt())
+        expectThat(playDiracDiceQuantumDice(input))
+            .isEqualTo(0L.toULong())
     }
 }
