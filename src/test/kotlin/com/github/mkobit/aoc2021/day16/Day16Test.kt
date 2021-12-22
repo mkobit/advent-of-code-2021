@@ -21,30 +21,27 @@ internal class Day16Test {
     private fun deleteMe(input: String): UInt = TODO()
 
     @Nested
+    @Disabled
     inner class PacketVersionsNumbersSumSampleInput {
         @Test
-        @Disabled
         internal fun `sample input 1 packet version sum`() {
             expectThat(packetVersionNumbersSum(SAMPLE_INPUT_1))
                 .isEqualTo(16.toUInt())
         }
 
         @Test
-        @Disabled
         internal fun `sample input 2 packet version sum`() {
             expectThat(packetVersionNumbersSum(SAMPLE_INPUT_2))
                 .isEqualTo(12.toUInt())
         }
 
         @Test
-        @Disabled
         internal fun `sample input 3 packet version sum`() {
             expectThat(packetVersionNumbersSum(SAMPLE_INPUT_3))
                 .isEqualTo(23.toUInt())
         }
 
         @Test
-        @Disabled
         internal fun `sample input 4 packet version sum`() {
             expectThat(packetVersionNumbersSum(SAMPLE_INPUT_4))
                 .isEqualTo(31.toUInt())
@@ -61,30 +58,27 @@ internal class Day16Test {
     }
 
     @Nested
+    @Disabled
     inner class Part2SampleInput {
         @Test
-        @Disabled
         internal fun `sample input 1`() {
             expectThat(deleteMe(SAMPLE_INPUT_1))
                 .isEqualTo(0.toUInt())
         }
 
         @Test
-        @Disabled
         internal fun `sample input 2`() {
             expectThat(deleteMe(SAMPLE_INPUT_2))
                 .isEqualTo(0.toUInt())
         }
 
         @Test
-        @Disabled
         internal fun `sample input 3`() {
             expectThat(deleteMe(SAMPLE_INPUT_3))
                 .isEqualTo(0.toUInt())
         }
 
         @Test
-        @Disabled
         internal fun `sample input 4`() {
             expectThat(deleteMe(SAMPLE_INPUT_4))
                 .isEqualTo(0.toUInt())
